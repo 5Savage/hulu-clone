@@ -38,6 +38,7 @@ a{
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
+    font-weight: 400;
  }
 
  .btn{
@@ -84,7 +85,7 @@ a{
     font-size: 12px;
     margin-top: 5px;
     text-decoration: underline;
-    justify-content: center;
+    
 }
  .header{
     height: 530px;
@@ -144,6 +145,15 @@ a{
     );
 }
 
+.sub-header > div:last-of-type{
+    justify-self: end;
+    align-self: end;
+}
+
+.sub-header >div:last-of-type .sub-link{
+    text-align: center;
+}
+
  @media(max-width:768px){
     .header .logo{width:250px}
 
@@ -151,10 +161,34 @@ a{
         text-align: center;
         padding: 20px;
     }
+    
+     .header .header-text-2{
+        display: none;
+    }
+     .header .header-text-1{
+        margin-bottom: 40px;
+     }
     .btn .btn-cta{
         width: 50px;
     }
     .btn{
         padding: 25px 40px;
     }
+
+    
+    .sub-header{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+    .sub-header img{
+        max-width: 70%;
+        margin: auto;
+        
+    }
+    .sub-header>div:last-of-type{
+        justify-self: center;
+        align-self: center;
+    }
+    
  }
