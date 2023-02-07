@@ -89,14 +89,14 @@ a{
 }
 
 .text-xl{
-    font-size: 70px;
-    font-weight: bold;
+    font-size: 45px;
+    font-weight: 500;
 }
 
 .sub-text{
     max-width: 850px;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
 
 }
  .header{
@@ -108,6 +108,8 @@ a{
     display: flex;
     justify-content: flex-end;
     padding: 20px 40px;
+    z-index: 2;
+    position: relative;
  }
 
  .header nav .login-btn{
@@ -140,6 +142,22 @@ a{
  .header .header-text-2{
     font-size: 18px;
     margin: 25px 0;
+ }
+
+ .header::after{
+   content: '';
+   position:absolute; 
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 180px;
+   z-index: 1;
+   background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.76) 15.54%,
+    rgba(0,0,0,0.192) 60.23%,
+    rgba(0,0,0,8e-5) 100%
+   );
  }
 
 
@@ -188,13 +206,39 @@ a{
  }
 
  .categories .cover-grade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
    background: linear-gradient(
     156.82deg,
     rgba(0,0,0,0.6) 4.58%,
     rgba(0,0,0,0)69.61%
    ),
    linear-gradient(24.5deg, rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0)71.49%);
+ }
 
+ .categories .cover-text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+ }
+ .cover-1{
+    background: url(./cover-1.jpeg)no-repeat center center/cover;
+ }
+
+ .cover-2 {
+     background: url(./cover-2.jpeg)no-repeat center center/cover;
+ }
+
+ .cover-3 {
+     background: url(./cover-3.jpeg)no-repeat center center/cover;
+ }
+
+ .cover-4 {
+     background: url(./cover-4.jpeg)no-repeat center center/cover;
  }
  @media(max-width:768px){
     .header .logo{width:250px}
