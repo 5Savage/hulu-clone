@@ -353,4 +353,15 @@ a{
         padding: 30px;
     }
 
+    .live-sports{
+        background: url(/live-sports-small.jpeg)no-repeat center center / cover;
+    }
+
+    .live-sports-content{
+        top: 30px;
+        left: 30px;
+        margin-top: 65px;
+
+    }
+
  }
