@@ -82,6 +82,14 @@ a{
     justify-content: center;
     text-align: center;
  }
+
+ .live a{
+    text-transform:uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+
+ }
 .legal-text{
    font-size: 10px;
    color: #ccc;
