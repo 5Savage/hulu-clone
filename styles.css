@@ -315,4 +315,8 @@ a{
     .categories .covers{
         grid-template-columns: 1fr;
     }
+    .live{
+        padding: 30px;
+    }
+
  }
