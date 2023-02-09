@@ -41,6 +41,14 @@ a{
     font-weight: 400;
  }
 
+small {
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+   
+   
+}
+
  .btn{
     display: inline-block;
     background: #fff;
